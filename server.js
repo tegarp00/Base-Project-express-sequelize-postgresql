@@ -23,6 +23,7 @@ const Role = db.role;
 //     console.log('Drop and Resync Db');
 //     initial()
 // });
+// initial()
 
 function initial() {
   Role.create({

@@ -7,6 +7,30 @@ const Op = db.Sequelize.Op;
 
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
+const { responseCodes } = require("express-response-helper");
+
+// exports.signup = async (req, res) => {
+//   // Save User to Database
+//   const user = await User.create({
+//     username: req.body.username,
+//     email: req.body.email,
+//     // password: bcrypt.hash(req.body.password, 8)
+//   }).then(user => {
+//     if(req.body.roles) {
+//       Role.findAll({
+//         where: {
+//           name: req.body.roles
+//         }
+//       }).then(roles => {
+//         user.setRoles(roles).then(() => {
+//         res.send({ message: "User was registered successfully!" });
+//         });
+//       });
+//         console.log(user)
+//       }
+//     })
+  
+// };
 
 exports.signup = (req, res) => {
   // Save User to Database
